@@ -15,17 +15,17 @@ It's 79 lines.
 
 2- to be fully in an object oriented approach.
 
-3- to have ability to define image name and image extension to save with,
+3- to have ability to define image name and image extension (to saved with),
   
-   also maxSize, imageTypes, errorMassage.
+  also maxSize, imageTypes, errorMassage.
 
 ## How to use it
 
 
 
-#### parameters 
+#### Parameters 
 
-This is the main method of Image class:
+This is the main method of Image:
 
     save($name, $directory, $file)
     
@@ -49,7 +49,7 @@ This is the main method of Image class:
 
 
 
-#### return value
+#### Return value
 
 -class returns TRUE on success.
 
@@ -57,7 +57,7 @@ This is the main method of Image class:
 
 
 
-#### image type and size configuration  (object manipulation)
+#### Image type and size configurations (by State Design Pattern)
 
 -After instantiating the Image class and before using the save() method you can
 
@@ -89,11 +89,11 @@ not feeding them means accepting all sizes and all image types.
     echo ($obj -> errorMessage());
 \
 \
-## credit
+## Credit
 
 Developed by Ehsan Yousefi <mailbox5517@gmail.com> [https://fsdeveloper.ir]
     
-## updates    
+## Updates    
     
-"20/4/2019 first release 0.0.0"
+"20/4/2019 first release"
 
