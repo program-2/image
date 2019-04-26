@@ -1,0 +1,9 @@
+{
+    "name": "program-2/image",
+    "description": "Image  is a library for uploading images",
+    "license": "Apache-2.0",
+    "keywords": ["library", "image"],
+    "require": {
+        "php": ">=5.5"
+    }
+}
