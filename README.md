@@ -15,9 +15,9 @@ It's 79 lines.
 
 2- to be fully in an object oriented approach.
 
-3- to have ability to define image name and image extension (to saved with),
+3- to have ability to define image name and image extension to save with,
   
-  also maxSize, imageTypes, errorMassage.
+   also maxSize, imageTypes, errorMassage.
 
 ## How to use it
 
@@ -25,7 +25,7 @@ It's 79 lines.
 
 #### parameters 
 
-This is the main method of Image:
+This is the main method of Image class:
 
     save($name, $directory, $file)
     
@@ -57,7 +57,7 @@ This is the main method of Image:
 
 
 
-#### image type and size configurations(object manipulation)
+#### image type and size configuration  (object manipulation)
 
 -After instantiating the Image class and before using the save() method you can
 
