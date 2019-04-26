@@ -4,7 +4,7 @@
 /* A library for uploading images safely with an object oriented approach for PHP 
  * author Ehsan Yousefi 
  * copyright 2019-2025 Ehsan Yousefi <mailbox5517@gmail.com> | https://fsdeveloper.ir 
- * version 1.0.0     */
+ * version 0.0.0     */
 class Image
 {
     
