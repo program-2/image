@@ -1,6 +1,6 @@
-## Image  is a library for uploading images  
+## Image   is a library for uploading images  
 
-\
+
 \
 ## Introduction
 
@@ -31,35 +31,35 @@ This is the main method of Image:
     
 **$name** 
 
--Is the name that html form assigns to the uploaded image.
+- Is the name that html form assigns to the uploaded image.
 
 **$directory**
 
--Is the destination directory that the image will be saved in.
+- Is the destination directory that the image will be saved in.
 
--This should be an already existing directory on server.
+- This should be an already existing directory on server.
 
 **$file**
 
--Is the name and extention that you choose for the new uploaded file like personel.png  .
+- Is the name and extention that you choose for the new uploaded file like personel.png  .
 
--This third parameter can be omitted from the save() method.
+- This third parameter can be omitted from the save() method.
 
--If no $file value is provided, the client's uploaded name and extension will be used. 
+- If no $file value is provided, the client's uploaded name and extension will be used. 
 
 
 
 #### Return value
 
--class returns TRUE on success.
+- class returns TRUE on success.
 
--class returns FALSE on failure.
+- class returns FALSE on failure.
 
 
 
 #### Image type and size configurations (by State Design Pattern)
 
--After instantiating the Image class and before using the save() method you can
+- After instantiating the Image class and before using the save() method you can
 
 allocate values of $maxSize  :int (IN BYTES) and  $alowedTypes :array (of extensions only),
  
@@ -69,15 +69,16 @@ not feeding them means accepting all sizes and all image types.
 
 #### errorMessage3
 
--Get and directly show the error message any where with using the errorMessage() method of the same object.
+- Get and directly show the error message any where with using the errorMessage() method of the same object.
 
--It returns NULL on a successful image saving.
+- It returns NULL on a successful image saving.
 
 
 
 #### A Complete Example:
 \
 \
+    
     $obj = new Image  //-> or any other way like dependency injection
 
     $obj -> maxSize = 4900000;
@@ -87,6 +88,7 @@ not feeding them means accepting all sizes and all image types.
     $obj -> save('image','pics/lastfolder','personel.png');
     
     echo ($obj -> errorMessage());
+    
 \
 \
 ## Credit
@@ -95,5 +97,5 @@ Developed by Ehsan Yousefi <mailbox5517@gmail.com> [https://fsdeveloper.ir]
     
 ## Updates    
     
-"20/4/2019 first release"
+"20/4/2019 first release version 0.0.0"
 
