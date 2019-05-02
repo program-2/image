@@ -59,14 +59,14 @@ class Image
         if ($check) {
              throw new exception('Script is not allowed');
         }
-          /* This is maybe the strongest way available to 
+        /* This is maybe the strongest way available to 
         test if the file is a valid image file or not. 
         please let me know if you know the like for any 
         other file types: mailbox5517@gmail.com */
         $checking = exif_imagetype($this->tmpName);
         if(!$checking){
             throw new exception('The file is not a valid image');
-        } echo $checking;
+        }
         /*checking if the uploaded file is in compliance
         with allowedTypes array in two following ways: */
         if($this->allowedTypes != null){
